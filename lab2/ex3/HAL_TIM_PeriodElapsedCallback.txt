@@ -1,0 +1,11 @@
+int counter = 50;
+
+void HAL_TIM_PeriodElapsedCallback ( TIM_HandleTypeDef * htim ){
+	counter--;
+
+	if (counter <= 0){
+		counter = 50;
+
+		FSM();
+	}
+}

@@ -1,0 +1,15 @@
+traffic_light.c:35:6:display7SEG_1	16	static
+traffic_light.c:46:6:display7SEG_2	16	static
+traffic_light.c:58:6:traffic_light_init	8	static
+traffic_light.c:89:6:init_after_modifying	8	static
+traffic_light.c:121:6:traffic_light_update_1	8	static
+traffic_light.c:166:6:traffic_light_update_2	8	static
+traffic_light.c:209:6:modify_RED	4	static
+traffic_light.c:217:6:modify_YELLOW	4	static
+traffic_light.c:225:6:modify_GREEN	4	static
+traffic_light.c:233:6:reset_DELTA	4	static
+traffic_light.c:242:9:get_TIME_1	4	static
+traffic_light.c:245:9:get_TIME_2	4	static
+traffic_light.c:249:9:get_RED_DURATION	4	static
+traffic_light.c:253:9:get_YELLOW_DURATION	4	static
+traffic_light.c:257:9:get_GREEN_DURATION	4	static

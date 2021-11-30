@@ -1,0 +1,50 @@
+int NUM[10][7]={
+		{0,0,0,0,0,0,1},
+		{1,0,0,1,1,1,1},
+		{0,0,1,0,0,1,0},
+		{0,0,0,0,1,1,0},
+		{1,0,0,1,1,0,0},
+		{0,1,0,0,1,0,0},
+		{0,1,0,0,0,0,0},
+		{0,0,0,1,1,1,1},
+		{0,0,0,0,0,0,0},
+		{0,0,0,0,1,0,0},
+};
+
+void display7SEG(int num)
+{
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, NUM[num][0]);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, NUM[num][1]);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, NUM[num][2]);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, NUM[num][3]);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, NUM[num][4]);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, NUM[num][5]);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, NUM[num][6]);
+}
+
+void update7SEG (int index ){
+	switch ( index ){
+		case 0:
+			// Display the first 7 SEG with led_buffer [0]
+			display7SEG(led_buffer[0]);
+			break ;
+
+		case 1:
+			// Display the second 7 SEG with led_buffer [1]
+			display7SEG(led_buffer[1]);
+			break ;
+
+		case 2:
+			// Display the third 7 SEG with led_buffer [2]
+			display7SEG(led_buffer[2]);
+			break ;
+
+		case 3:
+			// Display the forth 7 SEG with led_buffer [3]
+			display7SEG(led_buffer[3]);
+			break ;
+
+		default :
+			break ;
+	}
+}

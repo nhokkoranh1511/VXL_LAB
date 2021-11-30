@@ -1,0 +1,2 @@
+output_display.c:16:6:update_traffic_light	8	static
+output_display.c:64:6:scan_led_7seg	8	static
