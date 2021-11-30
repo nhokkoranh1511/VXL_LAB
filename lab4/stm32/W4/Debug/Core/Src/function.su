@@ -1,0 +1,5 @@
+function.c:4:6:Led_Display_PA3	8	static
+function.c:8:6:Led_Display_PA4	8	static
+function.c:12:6:Led_Display_PA5	8	static
+function.c:16:6:Led_Display_PA6	8	static
+function.c:20:6:Led_Display_PA7	8	static
